@@ -1,13 +1,13 @@
-var gameState = 0;
-var playerCount;
+
+var personCount;
 var database;
 var canvas
 
-var form,player,game;
+var form,person;
 
 
 function setup(){
-  canvas = createCanvas(400,400);
+  canvas = createCanvas(500,600);
   database = firebase.database();
 }
 
@@ -17,5 +17,5 @@ function draw(){
   var g = Math.round(random(0,255));
   var b = Math.round(random(0,255));
 
-  background(r,g,b);
+  background(0,100);
 }
