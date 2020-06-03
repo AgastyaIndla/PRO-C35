@@ -17,5 +17,7 @@ function draw(){
   var g = Math.round(random(0,255));
   var b = Math.round(random(0,255));
 
+  var form = new Form();
+
   background(0,100);
 }

@@ -12,6 +12,10 @@ class Form {
         var input = createInput("Email")
         var button = createButton('Next');
 
+        if(mousePressedOver('Next')){
+            form = new Form();
+        }
+
         input.position(250,160);
         button.position(250,200);
 
