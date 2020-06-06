@@ -1,23 +1,20 @@
-
-var personCount;
 var database;
-var canvas
+var form;
+var user;
+var peopleCount=0;
 
-var form,person;
-
-
-function setup(){
-  canvas = createCanvas(500,600);
+function setup() {
+  createCanvas(1000, 1100);
   database = firebase.database();
+  form = new Form();
+  form.display();
+  User = new UserData();
+  User.getCount();
+ 
 }
 
-function draw(){
-
-  var r = Math.round(random(0,255));
-  var g = Math.round(random(0,255));
-  var b = Math.round(random(0,255));
-
-  var form = new Form();
-
-  background(0,100);
+function draw() {
+  background(4,186,228);
+  
+  text("x:"+mouseX,50,650); text("y:"+mouseY,50,670);
 }
